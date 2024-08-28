@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background: url(../../assets/img/cocinauno.jpeg) left no-repeat,
+    url(../../assets/img/cocinados.jpeg) right no-repeat,
+    url(../../assets/img/cocinacuatro.jpeg) center no-repeat;
+    background-size: contain;
+    width: 100%;
+    font-family: "Baskervville SC", serif;
+    font-size: 3rem;
+}
+.header_h1{
+    color: #c0801f;
+    text-shadow: 2px 2px 5px black;
+}
+.header_p{
+    color: #481800;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px #dfe0df;
+}
+
+@media ( max-width: 1222px ){
+    .header{
+        height:350px ;
+    }
+}
+@media ( max-width: 1068px ){
+    .header{
+        height:300px ;
+    }
+}
+
+@media ( max-width: 910px ){
+    .header{
+        background-image: url(../../assets/img/cocinados.jpeg);
+        background-position-y: -50px ;
+        background-size: cover;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header_p{
+        text-shadow: 1px 1px 3px #dfe0df
+    };
+
+}

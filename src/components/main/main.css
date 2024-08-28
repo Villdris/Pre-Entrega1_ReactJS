@@ -1,0 +1,25 @@
+.main{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    
+    padding: 25px;
+
+    font-family: 'Baskervville SC';
+/*  font-family: 'Libre Baskervville'; 
+*/
+}
+.main_h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #402e32;
+    border-bottom: 5px double #402e32;
+    border-left: 5px double #402e32;
+}
+.main_conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 25px;
+    justify-content: center;
+}
