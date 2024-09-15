@@ -19,7 +19,18 @@
 .main_conteiner{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 60px;
     padding: 25px;
+    justify-content: center;
+}
+.cargando{
+    font-size: 5rem;
+}
+
+.contenedor_detalles{
+    min-height: 100%;
+    width: 100%;
+
+    display: flex;
     justify-content: center;
 }

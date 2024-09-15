@@ -1,8 +1,11 @@
 .card{
-    max-width: 703px;
+    max-width: 1200px;
     padding: 20px;
     box-shadow: 0px 0px 6px #421100;
 }
+
+
+
 .card_header{
     display: flex;
     justify-content: space-between;
@@ -48,7 +51,7 @@
     text-shadow: 2px 2px 3px #c0801f;
 }
 .front_img{
-    width: 100%;
+    width: 300px;
 }
 .front_img:hover{
     transform: scale(1.5);
@@ -129,4 +132,41 @@
     -moz-transition: 10ms;
     -ms-transition: 10ms;
     -o-transition: 10ms;
+}
+
+
+
+
+
+
+.simpleCard{
+    width: 300px;
+    font-family: "Libre Baskervville";
+    font-weight: 100;
+}
+.simpleCard_img img{
+    width: 100%;
+}
+.info_marca{
+    font-size: 1rem;
+    color:grey
+}
+.info_nombre{
+font-size: 2rem;
+}
+.info_precio{
+    color: #c0801f;
+    margin-top: 10px;
+
+    font-size: 1.5rem;
+}
+.simpleCard_envio_armado{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+.envio, .armado{
+    background-color: cornsilk;
 }
