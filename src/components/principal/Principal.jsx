@@ -1,6 +1,5 @@
 import './principal.css'
 import ItemListConteiner from './ItemListConteiner'
-import CartWidget from '../navbar/CartWidget'
 
 const principal = () => {
 
@@ -8,8 +7,6 @@ const principal = () => {
     <>
         
         <ItemListConteiner title='ItemListConteiner'/>
-
-        <CartWidget/>
 
     </>
   )

@@ -25,7 +25,8 @@ export const App = () => {
                     element={<ItemDetailsConteiner title='ItemDetailsConteiner'/>}
               />
           </Routes>
-          </main>
+
+        </main>
 
       </BrowserRouter>
     </>

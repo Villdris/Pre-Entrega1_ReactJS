@@ -26,7 +26,7 @@ const NavbarChild = () => {
           <NavbarChildSection section='Accesorios'/>
         </NavLink>
 
-        <Link to='/'>HOM</Link>
+        <Link to='/' className='link-sin-estilo'>Home</Link>
 
 
           <CartWidget/>

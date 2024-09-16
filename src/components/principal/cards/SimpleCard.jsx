@@ -10,7 +10,7 @@ export const SimpleCard = ({nombre, precio, img, id}) => {
     
     
     return (
-        <Link to={`/item/${id}`}>
+        <Link to={`/item/${id}`} className='link-sin-estilo'>
         <article className="simpleCard">
             <div className="simpleCard_img">
                 <img src={img} alt="" />

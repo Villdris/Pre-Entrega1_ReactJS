@@ -54,12 +54,13 @@
     width: 300px;
 }
 .front_img:hover{
-    transform: scale(1.5);
+    transform: translate(60%) scale(1.6);
     transition: all 400ms ease-in;
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
+    position: relative;
+    -webkit-transform: translate(60%) scale(1.6);
+    -moz-transform: translate(60%) scale(1.6);
+    -ms-transform: translate(60%) scale(1.6);
+    -o-transform: translate(60%) scale(1.6);
     -webkit-transition: all 400ms ease-in;
     -moz-transition: all 400ms ease-in;
     -ms-transition: all 400ms ease-in;
@@ -70,15 +71,15 @@
 
 .card_main_details{
     font-family: 'Libre Baskervville'; 
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     width: 50%;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .details_description{
     text-align: justify;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     color: #402e32;
 }
 .details_stock{
@@ -140,16 +141,17 @@
 
 
 .simpleCard{
-    width: 300px;
+    width: 310px;
     font-family: "Libre Baskervville";
     font-weight: 100;
+    padding: 10px 20px 10px 20px;
 }
 .simpleCard_img img{
     width: 100%;
 }
 .info_marca{
     font-size: 1rem;
-    color:grey
+    color:grey;
 }
 .info_nombre{
 font-size: 2rem;
@@ -170,3 +172,15 @@ font-size: 2rem;
 .envio, .armado{
     background-color: cornsilk;
 }
+
+.simpleCard:hover{
+    box-shadow: 3px 3px 9px black;
+}
+
+
+
+
+.link-sin-estilo{
+    text-decoration: none;
+    color: inherit;
+    }

@@ -62,7 +62,8 @@ const productosMuebles = [
         dimensiones: "200x150 cm",
         precio: 35000,
         stock: 1,
-        descripcion: "Armario espacioso con puertas corredizas, ideal para almacenar ropa y otros accesorios personales."
+        descripcion: "Armario espacioso con puertas corredizas, ideal para almacenar ropa y otros accesorios personales.",
+        img:'../../public/muebles/idseis.png'
     },
     {
         id: 7,
@@ -72,7 +73,8 @@ const productosMuebles = [
         dimensiones: "200x90 cm",
         precio: 60000,
         stock: 2,
-        descripcion: "Sofá cómodo y elegante, con capacidad para tres personas, ideal para cualquier tipo de sala de estar."
+        descripcion: "Sofá cómodo y elegante, con capacidad para tres personas, ideal para cualquier tipo de sala de estar.",
+        img:'../../public/muebles/idsiete.png'
     },
     {
         id: 8,
@@ -82,7 +84,8 @@ const productosMuebles = [
         dimensiones: "100x50 cm",
         precio: 20000,
         stock: 3,
-        descripcion: "Mesa de centro moderna con tapa de cristal y estructura de metal, perfecta para dar un toque sofisticado."
+        descripcion: "Mesa de centro moderna con tapa de cristal y estructura de metal, perfecta para dar un toque sofisticado.",
+        img:'../../public/muebles/idocho.png'
     },
     {
         id: 9,
@@ -92,7 +95,8 @@ const productosMuebles = [
         dimensiones: "180x80 cm",
         precio: 18000,
         stock: 2,
-        descripcion: "Biblioteca de madera con múltiples estantes para almacenar libros, revistas o elementos decorativos."
+        descripcion: "Biblioteca de madera con múltiples estantes para almacenar libros, revistas o elementos decorativos.",
+        img:'../../public/muebles/idnueve.png'
     },
     {
         id: 10,
@@ -102,7 +106,8 @@ const productosMuebles = [
         dimensiones: "150x30 cm",
         precio: 8000,
         stock: 5,
-        descripcion: "Lámpara de pie moderna con base de metal, ideal para iluminar cualquier rincón de tu hogar."
+        descripcion: "Lámpara de pie moderna con base de metal, ideal para iluminar cualquier rincón de tu hogar.",
+        img:'../../public/muebles/iddiez.png'
     },
     {
         id: 11,
@@ -112,7 +117,8 @@ const productosMuebles = [
         dimensiones: "100x70 cm",
         precio: 12000,
         stock: 3,
-        descripcion: "Espejo de estilo minimalista con borde metálico, perfecto para añadir profundidad y estilo a cualquier habitación."
+        descripcion: "Espejo de estilo minimalista con borde metálico, perfecto para añadir profundidad y estilo a cualquier habitación.",
+        img:'../../public/muebles/idonce.png'
     },
     {
         id: 12,
@@ -122,9 +128,12 @@ const productosMuebles = [
         dimensiones: "40x40 cm",
         precio: 1500,
         stock: 15,
-        descripcion: "Cojín suave y cómodo con diseño decorativo, ideal para sofás, camas o sillas."
+        descripcion: "Cojín suave y cómodo con diseño decorativo, ideal para sofás, camas o sillas.",
+        img:'../../public/muebles/iddoce.png'
     }
 ];
+
+productosMuebles.sort(() => Math.random() - 0.5);
 
 export const getProductosMuebles = ()=>{
     return new Promise((resolve) => {
