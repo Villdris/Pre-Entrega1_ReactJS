@@ -8,7 +8,6 @@ const BotonAgregarAlCarrito = ({funcionAgregar, contador}) => {
     )
 }
 
-
 BotonAgregarAlCarrito.propTypes = {
     funcionAgregar: PropTypes.func.isRequired,
     contador: PropTypes.number.isRequired

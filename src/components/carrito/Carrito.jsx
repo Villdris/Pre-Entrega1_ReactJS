@@ -18,17 +18,17 @@ const Carrito = () => {
         <h2>Tu Carrito Esta Vacio</h2>
         <div>
           <img src="../../../public/vacio.png" alt="" />
-          <Link to='/'>Ir a la Tienda</Link>
+          <Link to='/'>Ver mas muebles...</Link>
         </div>
       </section>
     )
   }
   return(
     <section className='carrito'>
-      <h2>Tu Carrito contiene: {cantidadTotal} productos </h2>
-      {carrito.map(item=> <CarritoCard key={item.id} {...item}/>)}
+      <h2>Tu Carrito contiene: {cantidadTotal} productos</h2>
+      {carrito.map(item => <CarritoCard key={item.mueble.id} {...item}/>)}
       <p className='carrito_cantidadtotal'>Precio Total a pagar: <span>${precioConPunto(precioTotal)}</span></p>
-      <Link to='/orden' className='footer_button'>Finalizar Compra</Link>
+      <Link to='/orden' className='footer_button'> --Pasar por caja-- </Link>
     </section>
   )
 

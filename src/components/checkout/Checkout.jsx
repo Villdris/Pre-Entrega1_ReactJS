@@ -8,14 +8,17 @@ const Checkout = () => {
     const {carrito} = useContext(CartContext);
   
     return (
+    <>
     <section className='orden'>
-        <h2>Boleta o Factura</h2>
-
-        {carrito.map(item => <OrdenCard key={item.id} {...item}/>)}
-
-        <Formulario/>
+        <h2>Resumen de tu carrito</h2>
+        {carrito.map(item => <OrdenCard key={item.mueble.id} {...item}/>)}
+    <section>
+      <Formulario/>
+    </section>
+        
 
     </section>
+    </>
   )
 }
 

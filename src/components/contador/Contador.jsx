@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-
 import './contador.css'
-
 import useContador from '../../customhooks/useContador';
 import BotonAgregarAlCarrito from '../botonagregaralcarrito/BotonAgregarAlCarrito';
 
@@ -25,9 +23,9 @@ const Contador = ({stock, inicial, funcionAgregar}) => {
 };
 
 Contador.propTypes = {
-    stock: PropTypes.number.isRequired, // debe ser un número y es obligatorio
-    inicial: PropTypes.number.isRequired, // debe ser un número y es obligatorio
-    funcionAgregar: PropTypes.func.isRequired // debe ser una función y es obligatoria
+    stock: PropTypes.number.isRequired,
+    inicial: PropTypes.number.isRequired,
+    funcionAgregar: PropTypes.func.isRequired
 };
 
 export default Contador;

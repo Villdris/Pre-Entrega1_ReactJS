@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyAx9eQXb_m_5_Xm7OVyiex9wJxLaLRDzKk",
-  authDomain: "muebles-44432.firebaseapp.com",
-  projectId: "muebles-44432",
-  storageBucket: "muebles-44432.appspot.com",
-  messagingSenderId: "401596709408",
-  appId: "1:401596709408:web:a389663e83c3a107981a45"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_authDomain,
+  projectId: import.meta.env.VITE_FIREBASE_projectId,
+  storageBucket: import.meta.env.VITE_FIREBASE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_messagingSenderId,
+  appId: import.meta.env.VITE_FIREBASE_appId
 
 };
 

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { CartContext } from '../../usecontext/CartContext';
 
@@ -13,25 +14,34 @@ const CarritoCard = ({mueble, cantidad, img}) => {
         return precio * multiplicar; 
     }
 
-  return (
-    <article className='card_carrito'>
-        <div className='carrito_img'>
-            <img src={img} alt="" />
-        </div>
-        <div className='carrito_detalles'>
-            <h2>{mueble.nombre}</h2>
-            <p>$ {precioConPunto(mueble.precio)} c/u</p>
-            <p>Cantidad : {cantidad}</p>
+    return (
+        <article className='card_carrito'>
+            <div className='carrito_img'>
+                <img src={img} alt="" />
+            </div>
+            <div className='carrito_detalles'>
+                <h2>{mueble.nombre}</h2>
+                <p>$ {precioConPunto(mueble.precio)} c/u</p>
+                <p>Cantidad : {cantidad}</p>
 
-            <p className='carrito_total'>Total: ${precioConPunto(precioTotalPoritem(mueble.precio, cantidad))}</p>
-        </div>
+                <p className='carrito_total'>Total: ${precioConPunto(precioTotalPoritem(mueble.precio, cantidad))}</p>
+            </div>
 
-        <div className='boton_eliminar'>
-            <p onClick={()=>eliminarDelCarrito(mueble.id)}>Quitar</p>
-        </div>
-
-    </article>
-  )
+            <div className='boton_eliminar'>
+                <p onClick={()=>eliminarDelCarrito(mueble.id)}>Quitar</p>
+            </div>
+        </article>
+    );
 }
 
-export default CarritoCard
+CarritoCard.propTypes = {
+    mueble: PropTypes.shape({
+        id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+        nombre: PropTypes.string.isRequired,
+        precio: PropTypes.number.isRequired,
+    }).isRequired,
+    cantidad: PropTypes.number.isRequired,
+    img: PropTypes.string.isRequired,
+};
+
+export default CarritoCard;
