@@ -1,7 +1,7 @@
 .nav{
     background-color: #ab8b67;
     font-family: "Baskervville SC", serif;
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 
 
@@ -13,10 +13,13 @@
     gap: 50px;
     margin-left: 50px;
     margin-right: 50px;
+    height: 43px;
 }
-.nav_ul_li{
+
+.nav_ul_li a{
     color: #dfe0df;
     cursor: pointer;
+    text-decoration: none;
 }
 .nav_ul_li:hover{
     color: #fff8f0;
@@ -37,22 +40,27 @@
     -o-transition: all 100ms linear;
 }
 
+.ruta_actual{
+    text-shadow: 3px 3px 5px black;
+}
+.ruta_actual_home{
+    display: inline-block;
+    transform: scale(1.2);
+    transform-origin: center;
+}
 
-
-.nav_cart{
-    list-style-type: none;
-    background-color: #ab8b67;
-    width: 80px;
-    height: 60px;
-    cursor: pointer;
-
-    margin-left: auto;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-
-    display: flex;
-    justify-content: center;
+.li_a_span{
+    font-family: 'Libre Baskervville';
+    font-size: 1.7rem;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 13px;
+    z-index: 1;
+    background-color: #ab8b6700;
+}
+.li_a_img{
+    width: 55px;
+}
+.ruta_actual_cart{
+    color: green;
 }

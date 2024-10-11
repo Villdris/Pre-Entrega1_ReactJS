@@ -1,7 +1,29 @@
 import './card.css'
 import PropTypes from 'prop-types';
+import { useState, useContext } from 'react';
+import Contador from '../contador/Contador';
+import { CartContext } from '../../usecontext/CartContext';
+import NotifiAgregar from '../notificaciones/NotifiAgregar';
+import { Link } from 'react-router-dom';
 
-const DetailsCard = ({nombre, categoria, material, dimensiones, precio, stock, descripcion, img}) => {
+const DetailsCard = ({nombre, categoria, material, dimensiones, precio, stock, descripcion, img, id}) => {
+
+  const [agregarCantidad, setAgregarCantidad] = useState(0);
+  const {agregarAlCarrito}= useContext(CartContext);
+  const [mostrarNotificacion, setMostrarNotificacion] = useState(false);
+
+  const manejadorCantidad = (cantidad) => {
+    setAgregarCantidad(cantidad);
+
+    const item = {id, nombre, precio, img}
+    agregarAlCarrito (item, cantidad, img);
+    setMostrarNotificacion(true);
+    
+    setTimeout(() => {
+      setMostrarNotificacion(false)
+    }, 4000);
+  }
+
   
   const precioConPunto = (n)=>{
     return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -33,10 +55,17 @@ const DetailsCard = ({nombre, categoria, material, dimensiones, precio, stock, d
         <p className='createby_subtitle'>Dimensiones</p>
         <p className='createby_title'>{dimensiones}</p>
       </div>
-      <div className='card_footer_button'>
-        <button id='footer_button'>Agregar</button>
-      </div>
+
+          <Contador stock={stock} inicial={0} funcionAgregar={manejadorCantidad}/>
     </div>
+    <Link to='/carrito'>
+      <NotifiAgregar
+        nombreMueble={nombre}
+        mostrar={mostrarNotificacion}
+        cuantas={agregarCantidad}
+        img={img}
+      />
+    </Link>
    </article>
   )
 }

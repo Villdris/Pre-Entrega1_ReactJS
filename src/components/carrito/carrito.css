@@ -1,0 +1,36 @@
+.carrito{
+    width: 800px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.carrito img{
+    width: 200px;
+}
+.carrito_h2{
+    text-align: center;
+}
+.carrito_cantidadtotal{
+    font-family: 'Libre Baskervville';
+    font-size: 2rem;
+}
+.carrito_cantidadtotal span{
+    padding: 0 20px 0 20px;
+    margin-left: 30%;
+    border-bottom: 6px double black;
+    border-left: 6px double black;
+    font-size: 3rem;
+}
+
+.carrito a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 260px;
+}

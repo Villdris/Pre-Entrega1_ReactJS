@@ -1,12 +1,16 @@
-function CartWidget() {
-  {/*Me costo un monton hacer la ruta, y era asi de simple RAAAYOOOS
-    El la primera entrega lo hice en css y me dio un insuficiente :cccc */}
+import { NavLink } from "react-router-dom"
+import { useContext } from "react"
+import { CartContext } from "../../usecontext/CartContext"
 
+const CartWidget = () => {
+  const {cantidadTotal} = useContext(CartContext);
   return (
-    <li className='nav_cart'>
-      <img src="./truckicon.png" alt="carrito de compras"/>
-    </li>
-
+      <NavLink to='/carrito' className={({ isActive }) => isActive ? 'ruta_actual_cart' : ''}>
+        
+        <span className="li_a_span">{cantidadTotal}</span>
+        
+        <img className='li_a_img' src="./truckicon.png" alt="carrito de compras"/>
+      </NavLink>
   )
 }
 

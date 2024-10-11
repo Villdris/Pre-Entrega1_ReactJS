@@ -1,0 +1,28 @@
+.contador{
+    font-size: 2rem;
+    display: flex;
+    gap: 10px;
+}
+.contador button{
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 20px ;
+    -webkit-border-radius: 20px ;
+    -moz-border-radius: 20px ;
+    -ms-border-radius: 20px ;
+    -o-border-radius: 20px ;
+
+    background-color: #c0801f;
+    color: #fff8f0;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.contador p{
+    font-family: 'Libre Baskervville';
+    margin: auto;
+}

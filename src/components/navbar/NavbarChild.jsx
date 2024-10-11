@@ -1,37 +1,29 @@
 import './navbar.css'
 import NavbarChildSection from './NavbarChildSection'
 import CartWidget from './CartWidget'
-import { NavLink, Link } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 
 
 
 const NavbarChild = () => {
   return (
-    <>
       <ul className='nav_ul'>
 
-        <NavLink to='/categoria/Living'>
-            <NavbarChildSection section='Living'/>
+        <NavbarChildSection section='Living'/>
+        <NavbarChildSection section='Habitacion'/>
+        <NavbarChildSection section='Cocina'/>
+        <NavbarChildSection section='Accesorios'/>
+
+        <li className='nav_ul_li'>
+        <NavLink to='/'
+            className={({isActive})=> isActive ? 'ruta_actual ruta_actual_home' : ''}>
+          HOME
         </NavLink>
-
-        <NavLink to='/categoria/Habitación'>
-          <NavbarChildSection section='Habitacion'/>
-        </NavLink>
-
-        <NavLink to='/categoria/Cocina'>
-          <NavbarChildSection section='Cocina'/>
-        </NavLink>  
-
-        <NavLink to='/categoria/Accesorios'>
-          <NavbarChildSection section='Accesorios'/>
-        </NavLink>
-
-        <Link to='/' className='link-sin-estilo'>Home</Link>
-
-
+        </li>
+        <li className='nav_ul_li'>
           <CartWidget/>
+        </li>
       </ul>
-    </>
   )
 }
 

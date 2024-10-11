@@ -1,0 +1,56 @@
+.input_cajita{
+    border: 1px solid black;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 5px;
+    width: 330px;
+    height: 40px;
+}
+
+#input_email, #input_emailvalidar, #input_nombre, #input_apellido,
+#input_telefono, .input_email, .input_emailvalidar{
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    outline-style: none;
+    border: none;
+    display: flex;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+
+
+.icons{
+    flex-basis: 10%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    transition: all 500ms linear ;
+    -webkit-transition: all 500ms linear ;
+    -moz-transition: all 500ms linear ;
+    -ms-transition: all 500ms linear ;
+    -o-transition: all 500ms linear ;
+}
+.icon_check, .icon_error{
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.focus{
+    border: 3px solid blue;
+    box-shadow: 0 0 3px black;
+}
+.icons > .show{
+    opacity: 1;
+}

@@ -109,7 +109,7 @@
     text-shadow: 1px 1px 3px #c0801f;
 }
 
-#footer_button{
+.footer_button{
     cursor: pointer;
     border: 1px solid #ffc0b7;
     padding: 15px 30px;
@@ -121,12 +121,12 @@
     margin-top: 20px;
     box-shadow: 2px 2px 6px #c0801f;
 }
-#footer_button:hover{
+.footer_button:hover{
     background: #ffc0b7;
     color: #c0801f; 
     border: 1px solid #c0801f;
 }
-#footer_button:active{
+.footer_button:active{
     box-shadow: 2px 2px 6px #c0801f inset;
     transition: 10ms;
     -webkit-transition: 10ms;
@@ -177,10 +177,56 @@ font-size: 2rem;
     box-shadow: 3px 3px 9px black;
 }
 
-
-
-
 .link-sin-estilo{
     text-decoration: none;
     color: inherit;
     }
+
+
+
+.card_carrito{
+    font-family: 'Libre Baskervville';
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+    border-left: 3px double black;
+    padding: 10px;
+
+    display: flex;
+}
+.carrito_img img{
+    width: 250px;
+}
+.boton_eliminar{
+    margin-left: auto;
+}
+.boton_eliminar p{
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #fff8f0;
+    background: #c0801f;
+    font-size: 1rem;
+    transition: 200ms;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px #c0801f;
+}
+.carrito_detalles{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.carrito_detalles h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.carrito_detalles p{
+    font-size: 1.5rem;
+}
+.carrito_total{
+    margin-top: 40%;
+    border-bottom: 3px solid black;
+}

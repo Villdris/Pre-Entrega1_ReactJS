@@ -35,5 +35,5 @@ SimpleCard.propTypes = {
     nombre: PropTypes.string.isRequired,
     precio: PropTypes.number.isRequired,
     img: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     };
