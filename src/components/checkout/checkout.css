@@ -1,4 +1,5 @@
 .orden{
+    margin-left: 100px;
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }

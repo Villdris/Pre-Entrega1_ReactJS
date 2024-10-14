@@ -1,0 +1,12 @@
+footer{
+    width: 100%;
+    min-height: 200px ;
+    background-color: #ab8b67;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    font-family: "Baskervville SC", serif;
+}

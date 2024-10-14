@@ -6,6 +6,7 @@ import ItemDetailsConteiner from "../itemsconteiners/ItemDetailsConteiner";
 import { CartProvider } from "../../usecontext/CartContext";
 import Carrito from "../carrito/Carrito";
 import Checkout from "../checkout/Checkout";
+import Footer from "../footer/Footer";
 
 const ConfigRutas = () => {
   return (
@@ -31,6 +32,7 @@ const ConfigRutas = () => {
           </main>
       </CartProvider>
 
+      <Footer/>
     </BrowserRouter>
   );
 };

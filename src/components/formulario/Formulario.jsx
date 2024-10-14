@@ -93,8 +93,7 @@ const Formulario = () => {
     <>
     {montarFormulario ? (
         <form onSubmit={manejadorFormulario}>
-            <h3>Tu información para realizar la Orden</h3>
-            <p><strong>{error} {ordenId}</strong></p>
+            <h3>Rellena el formulario para realizar la orden </h3>
 
             <div className="input_cajita">
                 <label htmlFor="input_nombre">
@@ -162,14 +161,17 @@ const Formulario = () => {
                     </div>
                 </div>
             </div>
+            <p className="mensaje_error"><strong>{error} {ordenId}</strong></p>
 
             <button className={"footer_button"} type="submit">Enviar</button>
         </form>
         ) 
         : 
         (
-            <div>
-                <h2>Tu orden a sido emitida {ordenId}</h2>
+            <div className="orden_emitida">
+                <h2>Tu orden a sido emitida</h2>
+                <p><strong>{ordenId}</strong></p>
+                <img src="../../../public/delivery-truck.png" alt="" />
                 <p>Gracias por comprar en Muebles Marolio</p>
             </div>
         )}

@@ -54,3 +54,14 @@
 .icons > .show{
     opacity: 1;
 }
+
+.mensaje_error{
+    color: red;
+    font-size: 1.5rem;
+}
+.orden_emitida{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
