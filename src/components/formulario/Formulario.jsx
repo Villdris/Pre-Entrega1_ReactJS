@@ -6,7 +6,7 @@ import { db } from "../../services/configFirebase";
 import { collection, addDoc } from "firebase/firestore";
 import { CartContext } from "../../usecontext/CartContext";
 
-const Formulario = () => {
+const Formulario = ({guardarHistorial}) => {
     const {carrito, vaciarCarrito, precioTotal} = useContext(CartContext);
 
     const [montarFormulario, setMontarFormulario] = useState(true);
@@ -75,6 +75,7 @@ const Formulario = () => {
         }
 
         setMontarFormulario(false);
+        guardarHistorial()
     };
 
     useEffect(() => {
